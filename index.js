@@ -1,7 +1,9 @@
 // expressモジュールを読み込む
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
+app.use(cors());
 const userList = [
 		{id: 1, name: "田中", age: 24, personalColor: "blue"},
 		{id: 2, name: "先岡", age: 28, personalColor: "pink"},
